@@ -12,15 +12,11 @@
 
   <body class="d-flex flex-column">
     <%= render 'layouts/navigation'%>
-    <%= render 'layouts/messages'%>
-
-    <%= yield %>
-  </body>
-
-  <footer id="sticky-footer" class="py-4 bg-dark text-white">
-    <div class="container text-center">
-      <small>Copyright &copy; <%= link_to "Ashwin Raman", "https://github.com/Ashwin27", class: "text-white" %></small>
+    <div id="page-content">
+      <%= render 'layouts/messages'%>
+      <%= yield %>
     </div>
-  </footer>
+    <%= render 'layouts/footer' %>
+  </body>
 
 </html>
