@@ -1,0 +1,9 @@
+<h1 class="text-center mt-4">Bloggers</h1>
+
+<div class="flickr_pagination">
+  <div class="page_info">
+    <%= page_entries_info @users %>
+  </div>
+  <%= will_paginate @users, :container => false %>
+</div>
+<%= render 'users' %>
